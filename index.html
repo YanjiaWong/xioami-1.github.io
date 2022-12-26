@@ -1,0 +1,2374 @@
+<html>
+    <head>
+      <link href="https://i01.appmifile.com/webfile/globalimg/favicon.ico" rel="shortcut icon" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="https://s01.appmifile.com/css/tw/base.css?3d44a40">
+       <meta charset="UTF-8"></meta>
+       
+        <link href="content.css" rel="stylesheet" type="text/css">
+        <link href="temp.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>小米官網</title>
+
+    </head>
+    <body>
+        <div class="top-notify" id="x">
+            小米防疫&物流發貨公告>>
+            <i class="close-notify" onclick="click()" >×</i>
+        </div>
+        <script>
+          var x = document.getElementById("x");
+          x.onclick=function(){
+            x.style.setProperty("display","none");
+          }
+          
+        </script>
+        <div class="site-topbar">
+            <div class="container">
+                <div class="topbar-nav">
+                    <span class="topbar-nav-text">MIUI</span>
+                    <span class="sep">|</span>
+                    <span class="topbar-nav-text">下載小米商城APP</span>
+                    
+                    <span class="sep">|</span>
+                    <span class="topbar-nav-text">小米積分中心</span>
+                    
+                    <span class="sep">|</span>
+                    <span class="topbar-nav-text">登錄送活動</span>
+                    
+                    <span class="sep">|</span>
+                    <span class="topbar-nav-text">小米團購</span>
+                    
+                </div>
+                <div class="entry mini-cart-entry J_foldingEntry" id="J_miniCartEntry" onmouseover="mouseover()" onmouseout="mouseout()">
+                  <a href="#">
+                    <i id="J_miniCartIcon" class="iconfont-cartempty-24"></i><span>購物車 </span><span class="number ">( 0 )</span>
+                  </a>
+            
+                  <div class="mini-cart-menu" id="J_miniCartMenu" style="height: 0px;">
+                    <div>
+                      <div class="loading" id="load" style="display: none;">
+                        <div class="loader"></div>
+                      </div>
+                      <div class="empty-cart" style="display: block;">購物車中還沒有商品，趕緊選購吧！</div>
+                      
+                    </div>
+                  </div>
+                </div>
+  
+                <script>
+                  var cartentry = document.getElementById("J_miniCartEntry");
+                  var menu = document.getElementById("J_miniCartMenu");
+                  function mouseover(){
+                    if(!cartentry.classList.contains("hover")){
+                      cartentry.classList.add("hover");
+                      load.style.removeProperty("display","none");
+                      load.style.setProperty("display","none");
+                    }
+                      menu.classList.add("auto-height");
+                      menu.style.setProperty("height","94px");
+                      
+                  }
+                  function mouseout(){
+                      cartentry.classList.remove("hover");
+                      menu.classList.remove("auto-height");
+                      menu.style.setProperty("height","0px");
+                  }
+                </script>
+                <div class="account-info ">
+                  <div class="sign-entries" id="J_signEntries">
+                    <ul>
+                      <li class="entry">
+                        <span class="topbar-nav-text">登入</span>
+                      </li>
+                      <li class="entry">
+                        <span class="topbar-nav-text">註冊</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="site-header">
+          <div class="curtain" id="J_curtain">
+            <div class="container">
+              <div class="milogo">
+                <div class="milogo-wrapper">
+                    <img src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg">
+                </div>
+
+                <div class="doodle" style="display: block;"><span class="link-block" style="background-image: url(img/lingquan-pc.gif);"></span></div>
+              </div>
+              <div id="J_shopCategories" class="shop-categories">
+                <div class="categories-wrapper J_navMainList">
+                  <div class="nav-category nav-category-toggled" id="J_categoryContainer">
+                    <a class="btn-category-list" href="https://www.mi.com/tw/list">全部商品分類</a>
+        
+                    <div class="nav-category-section">
+                      <style>
+                        li.nav-category-item:hover{
+                            background-color:#ff6700; 
+                        }
+      
+                        span.text:hover{
+                            color:#ff6700;
+                        }
+                      </style>
+                      <ul class="nav-category-list">
+                          <li class="nav-category-item">
+                            <a class="title">手機<i class="iconfont"></i>
+                            </a><div class="children children-col-3">
+                              <ul class="children-list children-list-col children-list-col-1 ">
+                                <li><a class="link"><img class = "thumb" src="img/Xiaomi12T40x40.png" width="40" height="40" ><span class="text">Xiaomi 12T 系列</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/Xiaomi-1240x40.png" width="40" height="40"><span class="text">Xiaomi 12 系列</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/POCOM540x40.png" width="40" height="40"><span class="text">POCO M5 系列</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/POCOX4Pro5G!40x40.png" width="40" height="40"><span class="text">POCO X4 Pro 5G</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/POCOF4GT!40x40.png" width="40" height="40"><span class="text">POCO F4 GT</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/POCOF4!40x40.png" width="40" height="40"><span class="text">POCO F4</span></a></li>
+                              </ul><ul class="children-list children-list-col children-list-col-2 ">
+                                <li><a class="link"><img class = "thumb" src="img/POCOX4GT!40x40.png" width="40" height="40"><span class="text">POCO X4 GT</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/pocp-c4!40x40.png" width="40" height="40"><span class="text">POCO C40</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/RedmiNote11Pro5G!40x40.png" width="40" height="40"><span class="text">Redmi Note 11 Pro 5G</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/RedmiNote11S5G!40x40.png" width="40" height="40"><span class="text">Redmi Note 11S 5G</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/RedmiNote11S!40x40.png" width="40" height="40"><span class="text">Redmi Note 11S</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/Redmi102022!40x40.png" width="40" height="40"><span class="text">Redmi 10 2022</span></a></li></ul>
+                              <ul class="children-list children-list-col children-list-col-3 ">
+                                <li><a class="link"><img class = "thumb" src="img/Redmi10C!40x40.png" width="40" height="40"><span class="text">Redmi 10C</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/redmi10a!40x40.png" width="40" height="40"><span class="text">Redmi 10A</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/POCO官方網站!40x40.png" width="40" height="40"><span class="text">POCO官方網站</span></a></li></ul>
+                            </div>
+                          </li>
+                          <li class="nav-category-item">
+                            <a class="title">視聽娛樂<i class="iconfont"></i></a>
+                            <div class="children children-col-2">
+                              <ul class="children-list children-list-col children-list-col-1 ">
+                                <li><a class="link"><img class = "thumb" src="img/智慧顯示器Q265型!40x40.png" width="40" height="40"><span class="text">智慧顯示器 Q2 65 型</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/智慧顯示器Max86型!40x40.png" width="40" height="40"><span class="text">智慧顯示器 Max 86 型</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/小米智慧顯示器65型!40x40.png" width="40" height="40"><span class="text">小米智慧顯示器 65型</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/智慧顯示器A2系列!40x40.png" width="40" height="40"><span class="text">智慧顯示器 A2 系列</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/智慧顯示器P1系列!40x40.png" width="40" height="40"><span class="text">智慧顯示器 P1 系列</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/Pad!40x40.png" width="40" height="40"><span class="text">Pad</span></a></li>
+                              </ul>
+                              <ul class="children-list children-list-col children-list-col-2 ">
+                                <li><a class="link"><img class = "thumb" src="img/Book!40x40.png" width="40" height="40"><span class="text">Book </span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/電腦螢幕!40x40.png" width="40" height="40"><span class="text">電腦螢幕</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/XiaomiK歌麥克風!40x40.png" width="40" height="40"><span class="text">Xiaomi K 歌麥克風</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/投影機!40x40.png" width="40" height="40"><span class="text">投影機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/藍芽耳機!40x40.jpg" width="40" height="40"><span class="text">藍牙耳機</span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="nav-category-item">
+                            <a class="title">智慧家電<i class="iconfont"></i></a>
+                            <div class="children children-col-3">
+                              <ul class="children-list children-list-col children-list-col-1 ">
+                                <li><a class="link"><img class = "thumb" src="img/掃拖機器人及配件!40x40.png" width="40" height="40"><span class="text">掃拖機器人及配件</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/洗地機!40x40.png" width="40" height="40"><span class="text">洗地機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/吸塵器及配件!40x40.png" width="40" height="40"><span class="text">吸塵器及配件</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/空淨及配件!40x40.png" width="40" height="40"><span class="text">空淨及配件</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/攝影機!40x40.png" width="40" height="40"><span class="text">攝影機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/風扇!40x40.png" width="40" height="40"><span class="text">風扇</span></a></li>
+                              </ul>
+                              <ul class="children-list children-list-col children-list-col-2 ">
+                                <li><a class="link"><img class = "thumb" src="img/燈具!40x40.png" width="40"><span class="text">燈具</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/電子鍋!40x40.jpg" width="40" height="40"><span class="text">電子鍋</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/電磁爐!40x40.png" width="40" height="40"><span class="text">電磁爐</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/煮湯鍋!40x40.png" width="40" height="40"><span class="text">煮湯鍋</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/調理機!40x40.png" width="40" height="40"><span class="text">調理機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/水壺及配件!40x40.png" width="40" height="40"><span class="text">水壺及配件</span></a></li>
+                              </ul>
+                              <ul class="children-list children-list-col children-list-col-3 ">
+                                <li><a class="link"><img class = "thumb" src="img/吹風機!40x40.png" width="40" height="40"><span class="text">吹風機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/智慧家具組合!40x40.png" width="40" height="40"><span class="text">智慧家居組合</span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="nav-category-item">
+                            <a class="title">旅行穿戴<i class="iconfont"></i></a>
+                            <div class="children children-col-2">
+                              <ul class="children-list children-list-col children-list-col-1 ">
+                                <li><a class="link"><img class = "thumb" src="img/手環!40x40.png" width="40" height="40"><span class="text">手環</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/手錶!40x40.png" width="40" height="40"><span class="text">手錶</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/穿戴配件!40x40.png" width="40" height="40"><span class="text">穿戴配件</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/行車紀錄器!40x40.png" width="40" height="40"><span class="text">行車記錄器</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/打氣機!40x40.png" width="40" height="40"><span class="text">打氣機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/旅行箱!40x40.png" width="40" height="40"><span class="text">旅行箱</span></a></li>
+                              </ul>
+                              <ul class="children-list children-list-col children-list-col-2 ">
+                                <li><a class="link"><img class = "thumb" src="img/喇叭!40x40.png" width="40" height="40"><span class="text">喇叭</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/自拍桿!40x40.png" width="40" height="40"><span class="text">自拍桿</span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="nav-category-item">
+                            <a class="title">智慧科技<i class="iconfont"></i></a>
+                            <div class="children children-col-2">
+                              <ul class="children-list children-list-col children-list-col-1 ">
+                                <li><a class="link"><img class = "thumb" src="img/濕度計!40x40.png" width="40" height="40"><span class="text">濕度計</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/攝影機(1)!40x40.png" width="40" height="40"><span class="text">攝影機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/無限吸塵器mini!40x40.png" width="40" height="40"><span class="text">無線吸塵器 mini</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/智慧門鈴!40x40.png" width="40" height="40"><span class="text">智慧門鈴</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/智慧開關!40x40.png" width="40" height="40"><span class="text">智慧開關</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/相片印表機!40x40.png" width="40" height="40"><span class="text">相片印表機</span></a></li>
+                              </ul>
+                              <ul class="children-list children-list-col children-list-col-2 ">
+                                <li><a class="link"><img class = "thumb" src="img/起子機!40x40.png" width="40" height="40"><span class="text">起子機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/wifi延伸器!40x40.png" width="40" height="40"><span class="text">wifi 延伸器</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/路由器!40x40.png" width="40" height="40"><span class="text">路由器</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/智慧家居組合!40x40.png" width="40" height="40"><span class="text">智慧家居組合</span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="nav-category-item">
+                            <a class="title">電源3C配件<i class="iconfont"></i></a>
+                            <div class="children children-col-2">
+                              <ul class="children-list children-list-col children-list-col-1 ">
+                                <li><a class="link"><img class = "thumb" src="img/行動電源!40x40.png" width="40" height="40"><span class="text">行動電源</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/充電器!40x40.png" width="40" height="40"><span class="text">充電器</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/延長線!40x40.png" width="40" height="40"><span class="text">延長線</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/傳輸線!40x40.png" width="40" height="40"><span class="text">傳輸線</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/無限車充!40x40.png" width="40" height="40"><span class="text">無線車充</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/滑鼠!40x40.png" width="40" height="40"><span class="text">滑鼠</span></a></li>
+                              </ul>
+                              <ul class="children-list children-list-col children-list-col-2 ">
+                                <li><a class="link"><img class = "thumb" src="img/自拍桿(1)!40x40.png" width="40" height="40"><span class="text">自拍桿</span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="nav-category-item">
+                            <a class="title">耳機音箱<i class="iconfont"></i></a>
+                            <div class="children children-col-1">
+                              <ul class="children-list children-list-col children-list-col-1 ">
+                                <li><a class="link"><img class = "thumb" src="img/藍芽耳機(1)!40x40.jpg" width="40" height="40"><span class="text">藍牙耳機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/喇叭(1)!40x40.png" width="40" height="40"><span class="text">喇叭</span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="nav-category-item">
+                            <a class="title">健康護理<i class="iconfont"></i></a>
+                            <div class="children children-col-1">
+                              <ul class="children-list children-list-col children-list-col-1 ">
+                                <li><a class="link"><img class = "thumb" src="img/吹風機(1)!40x40.png" width="40" height="40"><span class="text">吹風機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/體重計!40x40.png" width="40" height="40"><span class="text">體重計</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/洗手機(液)!40x40.png" width="40" height="40"><span class="text">洗手機 （液）</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/刮鬍刀!40x40.png" width="40" height="40"><span class="text">刮鬚刀</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/牙刷及刷頭!40x40.png" width="40" height="40"><span class="text">牙刷及刷頭</span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="nav-category-item">
+                            <a class="title">生活周邊<i class="iconfont"></i></a>
+                            <div class="children children-col-2">
+                              <ul class="children-list children-list-col children-list-col-1 ">
+                                <li><a class="link"><img class = "thumb" src="img/按摩槍!40x40.png" width="40" height="40"><span class="text">按摩槍</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/寵物用品!40x40.png" width="40" height="40"><span class="text">寵物用品</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/旅行箱(1)!40x40.png" width="40" height="40"><span class="text">旅行箱</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/後背包!40x40.png" width="40" height="40"><span class="text">後背包</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/打氣機(1)!40x40.png" width="40" height="40"><span class="text">打氣機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/電鑽!40x40.png" width="40" height="40"><span class="text">電鑽</span></a></li>
+                              </ul>
+                              <ul class="children-list children-list-col children-list-col-2 ">
+                                <li><a class="link"><img class = "thumb" src="img/調理機(1)!40x40.png" width="40" height="40"><span class="text">調理機</span></a></li>
+                                <li><a class="link"><img class = "thumb" src="img/液晶手寫板!40x40.png" width="40" height="40"><span class="text">液晶手寫板</span></a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="nav-category-item"> 
+                            <a class="title">全部配件分類</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <dl class="nav-item" id="nav-actived" onmouseover="mouseover1()" onmouseout="mouseoutEvent()">
+                    <dt class="main-category">
+                      <a href="#">Xiaomi手機</a>
+                    </dt>
+                  </dl>
+                  <!--<dl class="nav-item" id="nav-actived" onmouseover="mouseoverEvent()" onmouseout="mouseoutEvent()"> -->
+                  <dl class="nav-item" id="nav-actived" onmouseover="mouseover2()" onmouseout="mouseoutEvent()">
+                    <dt class="main-category">
+                      <a href="#">Redmi手機</a>
+                    </dt>
+                  </dl>
+                  <dl class="nav-item" id="nav-actived" onmouseover="mouseover3()" onmouseout="mouseoutEvent()">
+                      <dt class="main-category">
+                        <a href="#">POCO手機</a>
+                      </dt>
+                  </dl>
+                  <dl class="nav-item" id="nav-actived" onmouseover="mouseover4()" onmouseout="mouseoutEvent()">
+                      <dt class="main-category">
+                        <a href="#">智慧家庭</a>
+                      </dt>
+                  </dl>
+                  <dl class="nav-item" id="nav-actived" onmouseover="mouseover5()" onmouseout="mouseoutEvent()">
+                    <dt class="main-category">
+                      <a href="#">智慧科技</a>
+                    </dt>
+                  </dl>
+                  <dl class="nav-item" id="nav-actived" onmouseover="mouseover6()" onmouseout="mouseoutEvent()">
+                    <dt class="main-category">
+                      <a href="#">配件</a>
+                    </dt>
+                  </dl>
+                  <dl class="nav-item">
+                    <dt class="main-category">
+                    <a href="#">服務</a>
+                    </dt>
+                  </dl>
+                <div class="products" id="pro"><!--<div id="j_navMenu" class="header-nav-menu header-nav-menu-active">-->
+                  <div class="container"><!--container-->
+                    <div class="container products-exhibit-wrapper"><!--container products-exhibit-wrapper-->
+                      <div class="main-product"> 
+                              <a class="product-image" href="#">
+                                <img src="" id="img1" width="140" height="140">
+                              </a>
+                              <a class="product-name" href="#" id="text1">33W 快速充電器 1A1C版</a>
+                              <span class="product-price" id="price1">NT$325</span>
+                            </div>
+                                                <div class="main-product">
+                              <a class="product-image" href="#">
+                                <img src="" id="img2" width="140" height="140">
+                              </a>
+                              <a class="product-name" href="#" id="text2">直立風冷無線充電座 50W</a>
+                              <span class="product-price" id="price2">NT$ 1395</span>
+                            </div>
+                                                <div class="main-product">
+                              <a class="product-image" href="#">
+                                <img src="" id="img3" width="140" height="140">
+                              </a>
+                              <a class="product-name" href="#" id="text3">小米延長線</a>
+                              <span class="product-price" id="price3">NT$ 395</span>
+                            </div>
+                                                <div class="main-product">
+                              <a class="product-image" href="#">
+                                <img src=""  id="img4" width="140" height="140">
+                              </a>
+                              <a class="product-name" href="#" id="text4">小米行動電源 3 快充版</a>
+                              <span class="product-price" id="price4">NT$ 435</span>
+                            </div>
+                            <div class="main-product">
+                              <a class="product-image" href="#">
+                                <img src="" id="img5" width="140" height="140">
+                              </a>
+                              <a class="product-name" href="#" id="text5">空淨濾芯 除甲醛增強版 S1</a>
+                              <span class="product-price" id="price5">NT$ 795</span>
+                            </div>
+                            <div class="main-product">
+                              <a class="product-image" href="#">
+                                <img src="" id="img6" width="140" height="140">
+                              </a>
+                              <a class="product-name" href="#" id="text6">空氣循環淨化器</a>
+                              <span class="product-price" id="price6">NT$ 795</span>
+                            </div>
+                                            </div>
+                  </div>
+                </div>
+                          
+                          
+                      </div>
+                <div class="search-section"><!--J_searchFormAction-->
+                            <form class="search-form clearfix" id="element">
+                              <input class="search-text J_searchText" type="search" placeholder="搜尋商品">
+                              <input class="search-btn iconfont" type="submit" value="">
+          
+                            <div class="hot-words" id="searchstyle" style>
+                              <a href="#">Xiaomi 30 型 電競曲面螢幕</a>
+                            </div>
+                            </form>
+                            <div class="search-list hide"></div>
+                          </div>
+            </div>
+          </div>
+            <div class="fixed-nav J_fixNarBar" id="myHeader">
+            <div class="container">
+        
+              <div class="milogo">
+               <div class="milogo-wrapper">
+                 <img src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg" alt="">
+               </div>
+             </div>
+              <div class="user-action">
+        
+                          <div class="search-section">
+                    <form class="search-form clearfix" id="J_searchFormBar" action="/search" method="get">
+                      <input class="search-text iconfont" type="search" name="keyword" value="" autocomplete="off" placeholder=" 搜尋商品">
+                    </form>
+                  </div>
+                
+                <div class="mini-cart-action">
+        
+                  <div class="entry mini-cart-entry J_foldingEntry" id="J_miniCartBarEntry">
+                    <a href="#" rel="nofollow">
+                      <i id="J_miniCartBarIcon" class="iconfont-cartfull-24"></i><span>購物車 </span><span class="number ">( 0 )</span>
+                    </a>
+        
+                    <div class="mini-cart-menu" id="J_miniCartBarMenu">
+                      <div>
+                        <div class="loading" style="display: none;">
+                          <div class="loader"></div>
+                        </div>
+                        <div class="empty-cart" style="display: block;">購物車中還沒有商品，趕緊選購吧！</div>
+                        
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <script>
+            var img=[["productsimg/1-1.png","productsimg/1-2.png","productsimg/1-3.png","productsimg/1-4.png","productsimg/1-5.png","productsimg/1-6.png"],
+                     ["productsimg/2-1.png","productsimg/2-2.png","productsimg/2-3.png","productsimg/2-4.png","productsimg/2-5.png","productsimg/none.png"],
+                     ["productsimg/3-1.png","productsimg/3-2.png","productsimg/3-3.png","productsimg/3-4.png","productsimg/3-5.png","productsimg/3-6.png"],
+                     ["productsimg/4-1.png","productsimg/4-2.png","productsimg/4-3.png","productsimg/4-4.png","productsimg/4-5.png","productsimg/4-6.png"],
+                     ["productsimg/5-1.png","productsimg/5-2.png","productsimg/5-3.png","productsimg/5-4.png","productsimg/5-5.png","productsimg/5-6.png"],
+                     ["productsimg/6-1.png","productsimg/6-2.png","productsimg/6-3.png","productsimg/6-4.png","productsimg/6-5.png","productsimg/none.png"]];
+            var products=[["Xiaomi 12T Pro","Xiaomi 12T","Xiaomi 12 Pro 5G","Xiaomi 12 5G","Xiaomi 12 Lite","Xiaomi 12X 5G"],
+                          ["Redmi 10C","Redmi 10A","Redmi 10 5G","Redmi Note 11S","Redmi Note 11 Pro+ 5G"],
+                          ["POCO M5系列","POCO F4 GT","POCO X4 GT","POCO X4 Pro 5G","POCO C40","POCO F4"],
+                          ["Xiaomi空氣循環淨化器","智慧直流變頻電風扇","Xiaomi 掃拖機器人 S10","米家無線吸塵器 G10","米家無線吸塵器 mini","小米智慧投影機 2"],
+                          ["小米智慧顯示器","攝影機","Redmi Buds 3 Pro","Xiaomi 手環7 Pro","WiFi 訊號延伸器 AC1200","Xiaomi 智慧門鈴 3"],
+                          ["33W 快速充電器 1A1C版","直立風冷無線充電座 50W","小米延長線","小米行動電源 3 快充版","空淨濾芯 除甲醛增強版 S1"]];
+            var price=[["NT$19,999","NT$16,999","NT$26,999","NT$23,999","NT$13,999","NT$16,999"],
+                       ["NT$3,999","NT$3,499","NT$6,499起","NT$6,999","NT$11,999",""],
+                       ["NT$ 4,699起","NT$ 19,999","NT$ 11,999","NT$ 8,499起","NT$ 3,999","NT$ 12,999"],
+                       ["NT$ 11,995","NT$ 2,995","NT$ 7,995","NT$ 7,495","NT$ 1,095","NT$ 14,995"],
+                       ["NT$ 15,999起","NT$ 665起","NT$ 1,595","NT$ 1,995","NT$ 695","NT$ 1,895"],
+                       ["NT$ 325","NT$ 1,395","NT$ 395","NT$ 435","NT$ 795"],];
+            var img1 = document.getElementById("img1");
+            var img2 = document.getElementById("img2");
+            var img3 = document.getElementById("img3");
+            var img4 = document.getElementById("img4");
+            var img5 = document.getElementById("img5");
+            var img6 = document.getElementById("img6");
+            var text1 = document.getElementById("text1");
+            var text2 = document.getElementById("text2");
+            var text3 = document.getElementById("text3");
+            var text4 = document.getElementById("text4");
+            var text5 = document.getElementById("text5");
+            var text6 = document.getElementById("text6");
+            var price1 = document.getElementById("price1");
+            var price2 = document.getElementById("price2");
+            var price3 = document.getElementById("price3");
+            var price4 = document.getElementById("price4");
+            var price5 = document.getElementById("price5");
+            var price6 = document.getElementById("price6");
+    
+            var text = document.getElementById("nav-actived");
+            var Jmenu = document.getElementById("pro");
+            function mouseover1(){
+            text.classList.add("nav-item-active");
+              img1.src=img[0][0];
+              img2.src=img[0][1];
+              img3.src=img[0][2];
+              img4.src=img[0][3];
+              img5.src=img[0][4];
+              img6.src=img[0][5];
+              text1.innerText = products[0][0];
+              text2.innerText = products[0][1];
+              text3.innerText = products[0][2];
+              text4.innerText = products[0][3];
+              text5.innerText = products[0][4];
+              text6.innerText = products[0][5];
+              price1.innerText=price[0][0];
+              price2.innerText=price[0][1];
+              price3.innerText=price[0][2];
+              price4.innerText=price[0][3];
+              price5.innerText=price[0][4];
+              price6.innerText=price[0][5];
+              pro.setProperty("border-top","1px solid #e0e0e0");
+       
+            }
+            function mouseover2(){
+            text.classList.add("nav-item-active");
+              img1.src=img[1][0];
+              img2.src=img[1][1];
+              img3.src=img[1][2];
+              img4.src=img[1][3];
+              img5.src=img[1][4];
+              img6.src=img[1][5];
+              text1.innerText = products[1][0];
+              text2.innerText = products[1][1];
+              text3.innerText = products[1][2];
+              text4.innerText = products[1][3];
+              text5.innerText = products[1][4];
+              text6.innerText = "";
+              price1.innerText=price[1][0];
+              price2.innerText=price[1][1];
+              price3.innerText=price[1][2];
+              price4.innerText=price[1][3];
+              price5.innerText=price[1][4];
+              price6.innerText="";
+              pro.setProperty("border-top","1px solid #e0e0e0");
+                           
+            }
+            function mouseover3(){
+            text.classList.add("nav-item-active");
+              img1.src=img[2][0];
+              img2.src=img[2][1];
+              img3.src=img[2][2];
+              img4.src=img[2][3];
+              img5.src=img[2][4];
+              img6.src=img[2][5];
+              text1.innerText = products[2][0];
+              text2.innerText = products[2][1];
+              text3.innerText = products[2][2];
+              text4.innerText = products[2][3];
+              text5.innerText = products[2][4];
+              text6.innerText = products[2][5];
+              price1.innerText=price[2][0];
+              price2.innerText=price[2][1];
+              price3.innerText=price[2][2];
+              price4.innerText=price[2][3];
+              price5.innerText=price[2][4];
+              price6.innerText=price[2][5];
+              pro.setProperty("border-top","1px solid #e0e0e0");
+            }
+            function mouseover4(){
+            text.classList.add("nav-item-active");
+              img1.src=img[3][0];
+              img2.src=img[3][1];
+              img3.src=img[3][2];
+              img4.src=img[3][3];
+              img5.src=img[3][4];
+              img6.src=img[3][5];
+              text1.innerText = products[3][0];
+              text2.innerText = products[3][1];
+              text3.innerText = products[3][2];
+              text4.innerText = products[3][3];
+              text5.innerText = products[3][4];
+              text6.innerText = products[3][5];
+              price1.innerText=price[3][0];
+              price2.innerText=price[3][1];
+              price3.innerText=price[3][2];
+              price4.innerText=price[3][3];
+              price5.innerText=price[3][4];
+              price6.innerText=price[3][5];
+              pro.setProperty("border-top","1px solid #e0e0e0");
+            }
+            function mouseover5(){
+            text.classList.add("nav-item-active");
+              img1.src=img[4][0];
+              img2.src=img[4][1];
+              img3.src=img[4][2];
+              img4.src=img[4][3];
+              img5.src=img[4][4];
+              img6.src=img[4][5];
+              text1.innerText = products[4][0];
+              text2.innerText = products[4][1];
+              text3.innerText = products[4][2];
+              text4.innerText = products[4][3];
+              text5.innerText = products[4][4];
+              text6.innerText = products[4][5];
+              price1.innerText=price[4][0];
+              price2.innerText=price[4][1];
+              price3.innerText=price[4][2];
+              price4.innerText=price[4][3];
+              price5.innerText=price[4][4];
+              price6.innerText=price[4][5];    
+              pro.setProperty("border-top","1px solid #e0e0e0");       
+            }
+            function mouseover6(){
+            text.classList.add("nav-item-active");
+              img1.src=img[5][0];
+              img2.src=img[5][1];
+              img3.src=img[5][2];
+              img4.src=img[5][3];
+              img5.src=img[5][4];
+              img6.src=img[5][5];
+              text1.innerText = products[5][0];
+              text2.innerText = products[5][1];
+              text3.innerText = products[5][2];
+              text4.innerText = products[5][3];
+              text5.innerText = products[5][4];
+              text6.innerText = "";
+              price1.innerText=price[5][0];
+              price2.innerText=price[5][1];
+              price3.innerText=price[5][2];
+              price4.innerText=price[5][3];
+              price5.innerText=price[5][4];
+              price6.innerText="";
+              pro.setProperty("border-top","1px solid #e0e0e0");
+            }
+            
+            function mouseoutEvent(){
+            text.classList.remove("nav-item-active");
+            pro.removeProperty("border-top","1px solid #e0e0e0");
+            }
+            
+          </script>
+          <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            //var sticky = header.offsetTop;
+            var sticky = 190;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("fixed-active");
+              } else {
+                header.classList.remove("fixed-active");
+              }
+            }
+            </script>
+            <script>
+              document.onclick = function(){
+                var x = element.offsetLeft;
+                var y = element.offsetTop+70;
+                var mousex = event.x;
+                var mousey = event.y;
+                if(((mousex>=x)&&(mousex<=x+253))&&((mousey>=y)&&(mousey<=y+48))){
+                  searchstyle.style.setProperty("display","none");
+                }else{
+                  searchstyle.style.removeProperty("display","none");
+                }
+                document.getElementById("show").innerHTML=(x+","+y+"<br>"+mousex+","+mousey);
+              }
+            </script>
+          
+          </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+        <div class="home-hero-container">
+            <div class="container">
+                <div class="home-hero">
+                  <div class="container">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      
+                  
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="img/double12-pc.jpg" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img src="img/poco40-pc.jpg" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img src="img/weiya-banner-pc.jpg" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img src="img/20221208-153001.jpg" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img src="img/dengdai-pc.jpg" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img src="img/12t-pc-1111.jpg" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img src="img/poco-m5s-pc.jpg" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img src="img/w10pro-pc.jpg" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img src="img/wuxian-pc.jpg" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img src="img/11-proplus-pc.jpg" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img src="img/20221125-194113.jpg" style="width:100%;">
+                        </div>
+                        <div class="item">
+                          <img src="img/KKBOX-PC.jpg" style="width:100%;">
+                        </div>
+                      </div>
+                  
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                        <li data-target="#myCarousel" data-slide-to="5"></li>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                        <li data-target="#myCarousel" data-slide-to="7"></li>
+                        <li data-target="#myCarousel" data-slide-to="8"></li>
+                        <li data-target="#myCarousel" data-slide-to="9"></li>
+                        <li data-target="#myCarousel" data-slide-to="10"></li>
+                        <li data-target="#myCarousel" data-slide-to="11"></li>
+                      </ol>
+                      <!-- Left and right controls
+                        
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                       -->
+                      
+                      <div class="controls-direction">
+                        <a class="ui-prev" href="#myCarousel" data-slide="prev"></a>
+                        <a class="ui-next" href="#myCarousel" data-slide="next"></a>
+                      </div>
+                     
+                  
+                      
+                  
+                  
+                     
+                      
+                    </div>
+                  </div>
+                    <div class="home-hero-sub">
+                        <ul class="home-promo-list">
+                            <li><img src="img/Pic1.png"></li>
+                            <li><img src="img/Pic2.png"></li>
+                            <li><img src="img/Pic3.png"></li>
+                            <li><img src="img/Pic4.jpg"></li>
+                        </ul>
+                    </div>
+                    <div class="home-invite">
+                        <img src="img/member.png">
+                    </div>
+                </div>
+                <div class="home-star-goods xm-carousel-container">
+                    <div class="xm-plain-box">
+                        <div class="box-hd">
+                            <h2 class="title">
+                                <span>明星產品</span>
+                            </h2>
+                        </div>
+                        <div class="box-bd">
+                            <div class="xm-carousel-wrapper" style="height:340px; overflow:hidden;">
+                                
+                                <ul class="xm-carousel-list xm-carousel-col-5-list goods-list rainbow-list J_carouselList" style="width: 2480px; margin-left: -1240px; transition: margin-left 0.5s ease 0s;">
+                                    <li class="rainbow-item-1">
+                                        <a class="thumb onetrack-carousel"><img src="img/小米筆電.png"></a>
+                                        <h3 class="title">Xiaomi Book S 12.4</h3>
+                                        <p class="desc"></p>
+                                        <p class="price">NT$ 20995</p>
+                                    </li>
+                                    <li class="rainbow-item-2">
+                                        <img src="img/智慧顯示器.png">
+                                        <h3 class="title">小米智慧顯示器</h3>
+                                        <p class="desc"></p>
+                                        <p class="price">NT$ 20995</p>
+                                    </li>
+                                    <li class="rainbow-item-3">
+                                        <img src="img/智慧投影機.png">
+                                        <h3 class="title">小米智慧投影機</h3>
+                                        <p class="desc"></p>
+                                        <p class="price">NT$ 20995</p>
+                                    </li>
+                                    <li class="rainbow-item-4">
+                                        <img src="img/淨化器.png">
+                                        <h3 class="title">空氣淨化機</h3>
+                                        <p class="desc"></p>
+                                        <p class="price">NT$ 20995</p>
+                                    </li>
+                                    <li class="rainbow-item-5">
+                                        <img src="img/吸塵器.png">
+                                        <h3 class="title">米家無線吸塵器</h3>
+                                        <p class="desc"></p>
+                                        <p class="price">NT$ 20995</p>
+                                    </li>
+                                    <li class="rainbow-item-6">
+                                        <img src="img/電動打氣機.png">
+                                        <h3 class="title">小米電動打氣機</h3>
+                                        <p class="desc"></p>
+                                        <p class="price">NT$ 20995</p>
+                                    </li>
+                                    <li class="rainbow-item-7">
+                                        <img src="img/水離子吹風機.png">
+                                        <h3 class="title">水離子吹風機</h3>
+                                        <p class="desc"></p>
+                                        <p class="price">NT$ 20995</p>
+                                    </li>
+                                    <li class="rainbow-item-8">
+                                        <img src="img/電水壺.png">
+                                        <h3 class="title">米家恆溫電水壺</h3>
+                                        <p class="desc"></p>
+                                        <p class="price">NT$ 20995</p>
+                                    </li>
+                                    <li class="rainbow-item-9">
+                                        <img src="img/投影機.png">
+                                        <h3 class="title">智慧投影機 標準版</h3>
+                                        <p class="desc"></p>
+                                        <p class="price">NT$ 20995</p>
+                                    </li>
+                                    <li class="rainbow-item-10">
+                                        <a><img src="img/印表機.png"></a>
+                                        <h3 class="title">小米便攜相片印表機</h3>
+                                        <p class="desc"></p>
+                                        <p class="price">NT$ 20995</p>
+                                    </li>
+                                    
+                                    
+                                </ul> 
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-main home-main">
+            <div class="container">
+                <div id="hot" class="home-hot-goods xm-carousel-container" data-from-stat="false">
+                    <div class="xm-plain-box">
+                      <div class="box-hd">
+                        <h2 class="title"><span>熱賣產品排行</span></h2>
+                        <div class="more"></div>
+                      </div>
+                      <div class="box-bd J_brickBd">
+                        <ul class="xm-carousel-list xm-carousel-col-5-list goods-list J_hotList">
+                               
+                            <li class="brick-item">
+                                <img src="img/顯示器65型.png" alt=""></a>
+                                <h3 class="title">小米智慧顯示器 65型</h3>
+                                <p class="price">NT$ 20999</p>
+                                <span class="flag rainbow-item-1">1                </span>
+                            </li>
+                                   
+                            <li class="brick-item">
+                                <img src="img/攝影機雲台版.png" alt=""></a>
+                                <h3 class="title">小米智慧攝影機 雲台版 2K Pro</h3>
+                                <p class="price">NT$ 1345</p>
+                                <span class="flag rainbow-item-2">2                </span>
+                            </li>
+                                   
+                            <li class="brick-item">
+                                <img src="img/氣炸鍋.png" alt=""></a>
+                                <h3 class="title">小米智慧氣炸鍋 3.5L</h3>
+                                <p class="price">NT$ 1995</p>
+                                <span class="flag rainbow-item-3">3                </span>
+                            </li>
+                                   
+                            <li class="brick-item">
+                                <img src="img/空氣淨化器.png" alt=""></a>
+                                <h3 class="title">Xiaomi 空氣淨化器 4</h3>
+                                <p class="price">NT$ 4995</p>
+                                <span class="flag rainbow-item-4">4                </span>
+                            </li>
+                                   
+                            <li class="brick-item">
+                                <img src="img/掃拖機器人.png" alt=""></a>
+                                <h3 class="title">Xiaomi 掃拖機器人 2 Ultra 集塵版</h3>
+                                <p class="price">NT$ 14995</p>
+                                <span class="flag rainbow-item-5">5                </span>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div id="smart" class="home-brick-box home-brick-row-2-box xm-plain-box J_itemBox J_brickBox" data-from-stat="true" data-region-stat="1">
+                    <div class="box-hd">
+                      <h2 class="title"><span>智慧科技與家庭</span></h2>
+                    </div>
+                    <div class="box-bd J_brickBd">
+                      <div class="row">
+                        <div class="span4 span-first">
+                          <ul class="brick-promo-list">
+                                 
+                            <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","208844742866708");fbq("init","1129931634425051");fbq("track","PageView");</script>
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="img/row1.jpg" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-12-books.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-w10-ultra.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-kongjing-4po.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-band-7pro.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-rd-buds-3lite.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-450.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-smart-liaoliji.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalweb/picture/20221125-142603.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-c300.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-krok.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-jinmoqiang-mini.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-yanchangxian-set.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="">
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-22.5w.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                   
+                      
+                            <li class="brick-item brick-item-m">
+                              <a href="" >
+                                <img src="https://i01.appmifile.com/webfile/globalimg/summer/1114-yinshuiji-pet.jpg?width=234&amp;height=380" alt="" width="160" height="160">
+                              </a>
+                            </li>
+                   
+                          </ul>
+                        </div>
+                        
+                        <div class="span16">
+                          <ul class="brick-list tab-content">
+                                 
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3223700068" target="_blank" data-ot-info="{&quot;d&quot;:&quot;1&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223700068&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧顯示器 Q2 65 型&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right1_click', 'https://buy.mi.com/tw/item/3223700068'])" data-stat-aid="HWAA78de67b792f44fa7b33b86bd3c9c3412" data-stat-pid="4_221_0"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1665460092.32378525.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;1&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223700068&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧顯示器 Q2 65 型&quot;}" href="https://buy.mi.com/tw/item/3223700068" target="_blank" data-stat-aid="HWAA78de67b792f44fa7b33b86bd3c9c3412" data-stat-pid="4_221_0">Xiaomi 智慧顯示器 Q2 65 型</a>
+                              </h3>
+                              <p class="price">NT$ 35999</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3222500039" target="_blank" data-ot-info="{&quot;d&quot;:&quot;2&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222500039&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧顯示器 A2 55型&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right2_click', 'https://buy.mi.com/tw/item/3222500039'])" data-stat-aid="HWAA36d53598e145fc78f913df0fd93da997" data-stat-pid="4_221_1"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656059374.69853800.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;2&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222500039&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧顯示器 A2 55型&quot;}" href="https://buy.mi.com/tw/item/3222500039" target="_blank" data-stat-aid="HWAA36d53598e145fc78f913df0fd93da997" data-stat-pid="4_221_1">Xiaomi 智慧顯示器 A2 55型</a>
+                              </h3>
+                              <p class="price">NT$ 19999</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3222500040" target="_blank" data-ot-info="{&quot;d&quot;:&quot;3&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222500040&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧顯示器 A2 43型&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right3_click', 'https://buy.mi.com/tw/item/3222500040'])" data-stat-aid="HWAAf28c343041dde535798b8237469a5185" data-stat-pid="4_221_2"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656061012.71284064.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;3&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222500040&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧顯示器 A2 43型&quot;}" href="https://buy.mi.com/tw/item/3222500040" target="_blank" data-stat-aid="HWAAf28c343041dde535798b8237469a5185" data-stat-pid="4_221_2">Xiaomi 智慧顯示器 A2 43型</a>
+                              </h3>
+                              <p class="price">NT$ 15999</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3212000032" target="_blank" data-ot-info="{&quot;d&quot;:&quot;4&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3212000032&quot;,&quot;elementTitle&quot;:&quot;小米 27 型電腦螢幕&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right4_click', 'https://buy.mi.com/tw/item/3212000032'])" data-stat-aid="HWAA35b8d497acd4855d53ac450fec7d6a2a" data-stat-pid="4_221_3"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1621479160.6511830.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;4&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3212000032&quot;,&quot;elementTitle&quot;:&quot;小米 27 型電腦螢幕&quot;}" href="https://buy.mi.com/tw/item/3212000032" target="_blank" data-stat-aid="HWAA35b8d497acd4855d53ac450fec7d6a2a" data-stat-pid="4_221_3">小米 27 型電腦螢幕</a>
+                              </h3>
+                              <p class="price">NT$ 5295</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3212800021" target="_blank" data-ot-info="{&quot;d&quot;:&quot;5&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3212800021&quot;,&quot;elementTitle&quot;:&quot;小米34型曲面螢幕&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right5_click', 'https://buy.mi.com/tw/item/3212800021'])" data-stat-aid="HWAA26a4a18640235de8d0e26b8ae6da7c1f" data-stat-pid="4_221_4"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1626346503.08587000.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;5&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3212800021&quot;,&quot;elementTitle&quot;:&quot;小米34型曲面螢幕&quot;}" href="https://buy.mi.com/tw/item/3212800021" target="_blank" data-stat-aid="HWAA26a4a18640235de8d0e26b8ae6da7c1f" data-stat-pid="4_221_4">小米34型曲面螢幕</a>
+                              </h3>
+                              <p class="price">NT$ 12995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3212800022" target="_blank" data-ot-info="{&quot;d&quot;:&quot;6&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3212800022&quot;,&quot;elementTitle&quot;:&quot;小米23.8型電腦螢幕1C&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right6_click', 'https://buy.mi.com/tw/item/3212800022'])" data-stat-aid="HWAAba76ad5385074721b0a95aba24fa6d12" data-stat-pid="4_221_5"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1626346767.79016104.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;6&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3212800022&quot;,&quot;elementTitle&quot;:&quot;小米23.8型電腦螢幕1C&quot;}" href="https://buy.mi.com/tw/item/3212800022" target="_blank" data-stat-aid="HWAAba76ad5385074721b0a95aba24fa6d12" data-stat-pid="4_221_5">小米23.8型電腦螢幕1C</a>
+                              </h3>
+                              <p class="price">NT$ 4295</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3220200046" target="_blank" data-ot-info="{&quot;d&quot;:&quot;7&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220200046&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 27型 2K 電競螢幕&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right7_click', 'https://buy.mi.com/tw/item/3220200046'])" data-stat-aid="HWAA1550ed734008827037c926a096fc664f" data-stat-pid="4_221_6"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1642059129.29245338.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;7&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220200046&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 27型 2K 電競螢幕&quot;}" href="https://buy.mi.com/tw/item/3220200046" target="_blank" data-stat-aid="HWAA1550ed734008827037c926a096fc664f" data-stat-pid="4_221_6">Xiaomi 27型 2K 電競螢幕</a>
+                              </h3>
+                              <p class="price">NT$ 11995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3222600026" target="_blank" data-ot-info="{&quot;d&quot;:&quot;8&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222600026&quot;,&quot;elementTitle&quot;:&quot;XiaomiBook S 12.4”+ Keyboard+充電器 套裝&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right8_click', 'https://buy.mi.com/tw/item/3222600026'])" data-stat-aid="HWAAde11a63ee6d64d9701b127f988eab9ee" data-stat-pid="4_221_7"><img src="https://i01.appmifile.com/webfile/globalimg/summer/pms_1657708914.39357176.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;8&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222600026&quot;,&quot;elementTitle&quot;:&quot;XiaomiBook S 12.4”+ Keyboard+充電器 套裝&quot;}" href="https://buy.mi.com/tw/item/3222600026" target="_blank" data-stat-aid="HWAAde11a63ee6d64d9701b127f988eab9ee" data-stat-pid="4_221_7">XiaomiBook S 12.4”+ Keyboard+充電器 套裝</a>
+                              </h3>
+                              <p class="price">NT$ 24755</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3223400011" target="_blank" data-ot-info="{&quot;d&quot;:&quot;9&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223400011&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 無線洗地機 W10 Pro&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right9_click', 'https://buy.mi.com/tw/item/3223400011'])" data-stat-aid="HWAAa63bc395996e9c28040a21935cac5afe" data-stat-pid="4_221_8"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1661156019.98216795.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;9&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223400011&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 無線洗地機 W10 Pro&quot;}" href="https://buy.mi.com/tw/item/3223400011" target="_blank" data-stat-aid="HWAAa63bc395996e9c28040a21935cac5afe" data-stat-pid="4_221_8">Xiaomi 無線洗地機 W10 Pro</a>
+                              </h3>
+                              <p class="price">NT$ 15995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3223700138" target="_blank" data-ot-info="{&quot;d&quot;:&quot;10&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223700138&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 掃拖機器人 S10&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right10_click', 'https://buy.mi.com/tw/item/3223700138'])" data-stat-aid="HWAA88656fc6eaac0d44c8a24ed9693f0f2f" data-stat-pid="4_221_9"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1664274071.83322732.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;10&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223700138&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 掃拖機器人 S10&quot;}" href="https://buy.mi.com/tw/item/3223700138" target="_blank" data-stat-aid="HWAA88656fc6eaac0d44c8a24ed9693f0f2f" data-stat-pid="4_221_9">Xiaomi 掃拖機器人 S10</a>
+                              </h3>
+                              <p class="price">NT$ 7995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3222600020" target="_blank" data-ot-info="{&quot;d&quot;:&quot;11&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222600020&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 超輕量無線吸塵器&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right11_click', 'https://buy.mi.com/tw/item/3222600020'])" data-stat-aid="HWAA206574dc45614e781d8445ce1190c0b6" data-stat-pid="4_221_10"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656657594.61783139.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;11&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222600020&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 超輕量無線吸塵器&quot;}" href="https://buy.mi.com/tw/item/3222600020" target="_blank" data-stat-aid="HWAA206574dc45614e781d8445ce1190c0b6" data-stat-pid="4_221_10">Xiaomi 超輕量無線吸塵器</a>
+                              </h3>
+                              <p class="price">NT$ 8995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3215000011" target="_blank" data-ot-info="{&quot;d&quot;:&quot;12&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3215000011&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 無線吸塵器 G11&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right12_click', 'https://buy.mi.com/tw/item/3215000011'])" data-stat-aid="HWAA4b0c1a9cf1ca3a6db73a835cf0d573d7" data-stat-pid="4_221_11"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1639474430.97678877.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;12&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3215000011&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 無線吸塵器 G11&quot;}" href="https://buy.mi.com/tw/item/3215000011" target="_blank" data-stat-aid="HWAA4b0c1a9cf1ca3a6db73a835cf0d573d7" data-stat-pid="4_221_11">Xiaomi 無線吸塵器 G11</a>
+                              </h3>
+                              <p class="price">NT$ 8995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3214500035" target="_blank" data-ot-info="{&quot;d&quot;:&quot;13&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3214500035&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 空氣淨化器 4 Lite&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right13_click', 'https://buy.mi.com/tw/item/3214500035'])" data-stat-aid="HWAA7a2bd31238e4f013c2d475cbf726c5fc" data-stat-pid="4_221_12"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1654848468.39241656.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;13&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3214500035&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 空氣淨化器 4 Lite&quot;}" href="https://buy.mi.com/tw/item/3214500035" target="_blank" data-stat-aid="HWAA7a2bd31238e4f013c2d475cbf726c5fc" data-stat-pid="4_221_12">Xiaomi 空氣淨化器 4 Lite</a>
+                              </h3>
+                              <p class="price">NT$ 3495</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3195200010" target="_blank" data-ot-info="{&quot;d&quot;:&quot;14&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3195200010&quot;,&quot;elementTitle&quot;:&quot;米家空氣淨化器濾芯 除甲醛增強版 S1&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right14_click', 'https://buy.mi.com/tw/item/3195200010'])" data-stat-aid="HWAA69f82c7abb43fc77e5431a6c1161c372" data-stat-pid="4_221_13"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1577167989.67723522.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;14&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3195200010&quot;,&quot;elementTitle&quot;:&quot;米家空氣淨化器濾芯 除甲醛增強版 S1&quot;}" href="https://buy.mi.com/tw/item/3195200010" target="_blank" data-stat-aid="HWAA69f82c7abb43fc77e5431a6c1161c372" data-stat-pid="4_221_13">米家空氣淨化器濾芯 除甲醛增強版 S1</a>
+                              </h3>
+                              <p class="price">NT$ 795</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3221600002" target="_blank" data-ot-info="{&quot;d&quot;:&quot;15&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3221600002&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧無扇葉淨化風扇&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right15_click', 'https://buy.mi.com/tw/item/3221600002'])" data-stat-aid="HWAAf14215379dbee51390c75418f284e274" data-stat-pid="4_221_14"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1651198060.64381173.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;15&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3221600002&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧無扇葉淨化風扇&quot;}" href="https://buy.mi.com/tw/item/3221600002" target="_blank" data-stat-aid="HWAAf14215379dbee51390c75418f284e274" data-stat-pid="4_221_14">Xiaomi 智慧無扇葉淨化風扇</a>
+                              </h3>
+                              <p class="price">NT$ 7995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3214500033" target="_blank" data-ot-info="{&quot;d&quot;:&quot;16&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3214500033&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 空氣循環淨化器&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right16_click', 'https://buy.mi.com/tw/item/3214500033'])" data-stat-aid="HWAA297708f7f61011e71d243e6fbb7573c2" data-stat-pid="4_221_15"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1636539002.71722742.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;16&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3214500033&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 空氣循環淨化器&quot;}" href="https://buy.mi.com/tw/item/3214500033" target="_blank" data-stat-aid="HWAA297708f7f61011e71d243e6fbb7573c2" data-stat-pid="4_221_15">Xiaomi 空氣循環淨化器</a>
+                              </h3>
+                              <p class="price">NT$ 11995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3212000034" target="_blank" data-ot-info="{&quot;d&quot;:&quot;17&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3212000034&quot;,&quot;elementTitle&quot;:&quot;小米手環6&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right17_click', 'https://buy.mi.com/tw/item/3212000034'])" data-stat-aid="HWAAf19f1cacc1c9d855cbc062377459b88d" data-stat-pid="4_221_16"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1621480005.41554496.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;17&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3212000034&quot;,&quot;elementTitle&quot;:&quot;小米手環6&quot;}" href="https://buy.mi.com/tw/item/3212000034" target="_blank" data-stat-aid="HWAAf19f1cacc1c9d855cbc062377459b88d" data-stat-pid="4_221_16">小米手環6</a>
+                              </h3>
+                              <p class="price">NT$ 895</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                                          <span class="flag flag-saleoff">8.2折</span>
+                                     
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3222000024" target="_blank" data-ot-info="{&quot;d&quot;:&quot;18&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222000024&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 手環7&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right18_click', 'https://buy.mi.com/tw/item/3222000024'])" data-stat-aid="HWAAda79965ce183e3d603540fa5168ad274" data-stat-pid="4_221_17"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1653461542.8592748.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;18&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222000024&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 手環7&quot;}" href="https://buy.mi.com/tw/item/3222000024" target="_blank" data-stat-aid="HWAAda79965ce183e3d603540fa5168ad274" data-stat-pid="4_221_17">Xiaomi 手環7</a>
+                              </h3>
+                              <p class="price">NT$ 1195</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3214800047" target="_blank" data-ot-info="{&quot;d&quot;:&quot;19&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3214800047&quot;,&quot;elementTitle&quot;:&quot;Redmi 手環 Pro&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right19_click', 'https://buy.mi.com/tw/item/3214800047'])" data-stat-aid="HWAA5b8be02d99eaa49d6a3da4650a32eaeb" data-stat-pid="4_221_18"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1638442508.23396290.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;19&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3214800047&quot;,&quot;elementTitle&quot;:&quot;Redmi 手環 Pro&quot;}" href="https://buy.mi.com/tw/item/3214800047" target="_blank" data-stat-aid="HWAA5b8be02d99eaa49d6a3da4650a32eaeb" data-stat-pid="4_221_18">Redmi 手環 Pro</a>
+                              </h3>
+                              <p class="price">NT$ 995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                                          <span class="flag flag-saleoff">8.3折</span>
+                                     
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3220900022" target="_blank" data-ot-info="{&quot;d&quot;:&quot;20&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220900022&quot;,&quot;elementTitle&quot;:&quot;Xiaomi Watch S1 Active&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right20_click', 'https://buy.mi.com/tw/item/3220900022'])" data-stat-aid="HWAA80b47ca82dc949454fa9f94dc9d4acac" data-stat-pid="4_221_19"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646290380.15354139.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;20&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220900022&quot;,&quot;elementTitle&quot;:&quot;Xiaomi Watch S1 Active&quot;}" href="https://buy.mi.com/tw/item/3220900022" target="_blank" data-stat-aid="HWAA80b47ca82dc949454fa9f94dc9d4acac" data-stat-pid="4_221_19">Xiaomi Watch S1 Active</a>
+                              </h3>
+                              <p class="price">NT$ 4495</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3220900017" target="_blank" data-ot-info="{&quot;d&quot;:&quot;21&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220900017&quot;,&quot;elementTitle&quot;:&quot;Xiaomi buds 3T Pro 降噪藍牙耳機&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right21_click', 'https://buy.mi.com/tw/item/3220900017'])" data-stat-aid="HWAA710fe8dff0b0c5b1560eb6d7548548f0" data-stat-pid="4_221_20"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646290086.26076575.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;21&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220900017&quot;,&quot;elementTitle&quot;:&quot;Xiaomi buds 3T Pro 降噪藍牙耳機&quot;}" href="https://buy.mi.com/tw/item/3220900017" target="_blank" data-stat-aid="HWAA710fe8dff0b0c5b1560eb6d7548548f0" data-stat-pid="4_221_20">Xiaomi buds 3T Pro 降噪藍牙耳機</a>
+                              </h3>
+                              <p class="price">NT$ 3195</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3220900019" target="_blank" data-ot-info="{&quot;d&quot;:&quot;22&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220900019&quot;,&quot;elementTitle&quot;:&quot;Xiaomi buds 3&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right22_click', 'https://buy.mi.com/tw/item/3220900019'])" data-stat-aid="HWAA4fb3f8548c20311c566abb38e9b39925" data-stat-pid="4_221_21"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1646293481.10538009.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;22&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220900019&quot;,&quot;elementTitle&quot;:&quot;Xiaomi buds 3&quot;}" href="https://buy.mi.com/tw/item/3220900019" target="_blank" data-stat-aid="HWAA4fb3f8548c20311c566abb38e9b39925" data-stat-pid="4_221_21">Xiaomi buds 3</a>
+                              </h3>
+                              <p class="price">NT$ 2295</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3223100024" target="_blank" data-ot-info="{&quot;d&quot;:&quot;23&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223100024&quot;,&quot;elementTitle&quot;:&quot;Redmi Buds 4 Pro&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right23_click', 'https://buy.mi.com/tw/item/3223100024'])" data-stat-aid="HWAA822100f25ae8d69862992a5171d92caf" data-stat-pid="4_221_22"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1662088538.47691808.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;23&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223100024&quot;,&quot;elementTitle&quot;:&quot;Redmi Buds 4 Pro&quot;}" href="https://buy.mi.com/tw/item/3223100024" target="_blank" data-stat-aid="HWAA822100f25ae8d69862992a5171d92caf" data-stat-pid="4_221_22">Redmi Buds 4 Pro</a>
+                              </h3>
+                              <p class="price">NT$ 1995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3213500002" target="_blank" data-ot-info="{&quot;d&quot;:&quot;24&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3213500002&quot;,&quot;elementTitle&quot;:&quot;Redmi Buds 3&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right24_click', 'https://buy.mi.com/tw/item/3213500002'])" data-stat-aid="HWAA985422a179feed5796054bb221777eed" data-stat-pid="4_221_23"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1631932870.08686913.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;24&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3213500002&quot;,&quot;elementTitle&quot;:&quot;Redmi Buds 3&quot;}" href="https://buy.mi.com/tw/item/3213500002" target="_blank" data-stat-aid="HWAA985422a179feed5796054bb221777eed" data-stat-pid="4_221_23">Redmi Buds 3</a>
+                              </h3>
+                              <p class="price">NT$ 945</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3191600001" target="_blank" data-ot-info="{&quot;d&quot;:&quot;25&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3191600001&quot;,&quot;elementTitle&quot;:&quot;米家檯燈 Pro&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right25_click', 'https://buy.mi.com/tw/item/3191600001'])" data-stat-aid="HWAAc48bf60313bb7d4c83d5f2a74520a0d3" data-stat-pid="4_221_24"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1555664964.88468594.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;25&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3191600001&quot;,&quot;elementTitle&quot;:&quot;米家檯燈 Pro&quot;}" href="https://buy.mi.com/tw/item/3191600001" target="_blank" data-stat-aid="HWAAc48bf60313bb7d4c83d5f2a74520a0d3" data-stat-pid="4_221_24">米家檯燈 Pro</a>
+                              </h3>
+                              <p class="price">NT$ 1795</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3204900017" target="_blank" data-ot-info="{&quot;d&quot;:&quot;26&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3204900017&quot;,&quot;elementTitle&quot;:&quot;米家螢幕掛燈&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right26_click', 'https://buy.mi.com/tw/item/3204900017'])" data-stat-aid="HWAA3c589a81177d09d49fc082e88e6ede2b" data-stat-pid="4_221_25"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1608286965.72071325.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;26&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3204900017&quot;,&quot;elementTitle&quot;:&quot;米家螢幕掛燈&quot;}" href="https://buy.mi.com/tw/item/3204900017" target="_blank" data-stat-aid="HWAA3c589a81177d09d49fc082e88e6ede2b" data-stat-pid="4_221_25">米家螢幕掛燈</a>
+                              </h3>
+                              <p class="price">NT$ 995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3192800004" target="_blank" data-ot-info="{&quot;d&quot;:&quot;27&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3192800004&quot;,&quot;elementTitle&quot;:&quot;米家 LED 智慧檯燈 1S&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right27_click', 'https://buy.mi.com/tw/item/3192800004'])" data-stat-aid="HWAA8a445cfb96f09ab9abda79bef10e6e43" data-stat-pid="4_221_26"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1564892957.48138127.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;27&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3192800004&quot;,&quot;elementTitle&quot;:&quot;米家 LED 智慧檯燈 1S&quot;}" href="https://buy.mi.com/tw/item/3192800004" target="_blank" data-stat-aid="HWAA8a445cfb96f09ab9abda79bef10e6e43" data-stat-pid="4_221_26">米家 LED 智慧檯燈 1S</a>
+                              </h3>
+                              <p class="price">NT$ 995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3201200025" target="_blank" data-ot-info="{&quot;d&quot;:&quot;28&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3201200025&quot;,&quot;elementTitle&quot;:&quot;米家 LED 智慧燈泡 Lite 彩光版&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right28_click', 'https://buy.mi.com/tw/item/3201200025'])" data-stat-aid="HWAAd7800bdbfbfb647f7f38bce400880b00" data-stat-pid="4_221_27"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1584677598.85521573.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;28&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3201200025&quot;,&quot;elementTitle&quot;:&quot;米家 LED 智慧燈泡 Lite 彩光版&quot;}" href="https://buy.mi.com/tw/item/3201200025" target="_blank" data-stat-aid="HWAAd7800bdbfbfb647f7f38bce400880b00" data-stat-pid="4_221_27">米家 LED 智慧燈泡 Lite 彩光版</a>
+                              </h3>
+                              <p class="price">NT$ 395</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3194500016" target="_blank" data-ot-info="{&quot;d&quot;:&quot;29&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3194500016&quot;,&quot;elementTitle&quot;:&quot;米家調理機&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right29_click', 'https://buy.mi.com/tw/item/3194500016'])" data-stat-aid="HWAAcd1e667cda88302ef2e3dc4c6290389e" data-stat-pid="4_221_28"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1572937053.34627034.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;29&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3194500016&quot;,&quot;elementTitle&quot;:&quot;米家調理機&quot;}" href="https://buy.mi.com/tw/item/3194500016" target="_blank" data-stat-aid="HWAAcd1e667cda88302ef2e3dc4c6290389e" data-stat-pid="4_221_28">米家調理機</a>
+                              </h3>
+                              <p class="price">NT$ 895</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3223100023" target="_blank" data-ot-info="{&quot;d&quot;:&quot;30&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223100023&quot;,&quot;elementTitle&quot;:&quot;小米電水壺 2&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right30_click', 'https://buy.mi.com/tw/item/3223100023'])" data-stat-aid="HWAA4fafc7c72a85905cddf038eeac42457b" data-stat-pid="4_221_29"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1659697005.56169523.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;30&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223100023&quot;,&quot;elementTitle&quot;:&quot;小米電水壺 2&quot;}" href="https://buy.mi.com/tw/item/3223100023" target="_blank" data-stat-aid="HWAA4fafc7c72a85905cddf038eeac42457b" data-stat-pid="4_221_29">小米電水壺 2</a>
+                              </h3>
+                              <p class="price">NT$ 895</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3184900009" target="_blank" data-ot-info="{&quot;d&quot;:&quot;31&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3184900009&quot;,&quot;elementTitle&quot;:&quot;米家電磁爐&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right31_click', 'https://buy.mi.com/tw/item/3184900009'])" data-stat-aid="HWAA102ed69382cf2c90a6d2b31c16be5686" data-stat-pid="4_221_30"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1586769544.24994646.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;31&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3184900009&quot;,&quot;elementTitle&quot;:&quot;米家電磁爐&quot;}" href="https://buy.mi.com/tw/item/3184900009" target="_blank" data-stat-aid="HWAA102ed69382cf2c90a6d2b31c16be5686" data-stat-pid="4_221_30">米家電磁爐</a>
+                              </h3>
+                              <p class="price">NT$ 1795</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3184600052" target="_blank" data-ot-info="{&quot;d&quot;:&quot;32&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3184600052&quot;,&quot;elementTitle&quot;:&quot;知吾煮湯鍋&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right32_click', 'https://buy.mi.com/tw/item/3184600052'])" data-stat-aid="HWAA9cbdd74153262e442b98272b4eb64f23" data-stat-pid="4_221_31"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1542382266.2081030.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;32&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3184600052&quot;,&quot;elementTitle&quot;:&quot;知吾煮湯鍋&quot;}" href="https://buy.mi.com/tw/item/3184600052" target="_blank" data-stat-aid="HWAA9cbdd74153262e442b98272b4eb64f23" data-stat-pid="4_221_31">知吾煮湯鍋</a>
+                              </h3>
+                              <p class="price">NT$ 595</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3213300001" target="_blank" data-ot-info="{&quot;d&quot;:&quot;33&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3213300001&quot;,&quot;elementTitle&quot;:&quot;小米負離子吹風機 H300&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right33_click', 'https://buy.mi.com/tw/item/3213300001'])" data-stat-aid="HWAAd1710931a2677f8c442d400a4420896e" data-stat-pid="4_221_32"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1629102597.77461623.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;33&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3213300001&quot;,&quot;elementTitle&quot;:&quot;小米負離子吹風機 H300&quot;}" href="https://buy.mi.com/tw/item/3213300001" target="_blank" data-stat-aid="HWAAd1710931a2677f8c442d400a4420896e" data-stat-pid="4_221_32">小米負離子吹風機 H300</a>
+                              </h3>
+                              <p class="price">NT$ 795</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3220200050" target="_blank" data-ot-info="{&quot;d&quot;:&quot;34&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220200050&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 聲波電動牙刷 T700&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right34_click', 'https://buy.mi.com/tw/item/3220200050'])" data-stat-aid="HWAA8e656de8715eb2f9c64dbe260c16f981" data-stat-pid="4_221_33"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1644222708.82874534.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;34&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220200050&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 聲波電動牙刷 T700&quot;}" href="https://buy.mi.com/tw/item/3220200050" target="_blank" data-stat-aid="HWAA8e656de8715eb2f9c64dbe260c16f981" data-stat-pid="4_221_33">Xiaomi 聲波電動牙刷 T700</a>
+                              </h3>
+                              <p class="price">NT$ 1995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3194800029" target="_blank" data-ot-info="{&quot;d&quot;:&quot;35&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3194800029&quot;,&quot;elementTitle&quot;:&quot;米家聲波電動牙刷 T500&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right35_click', 'https://buy.mi.com/tw/item/3194800029'])" data-stat-aid="HWAAc3c2cb6b1514e2b83c5e07ddc4c3344e" data-stat-pid="4_221_34"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1576495402.54211405.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;35&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3194800029&quot;,&quot;elementTitle&quot;:&quot;米家聲波電動牙刷 T500&quot;}" href="https://buy.mi.com/tw/item/3194800029" target="_blank" data-stat-aid="HWAAc3c2cb6b1514e2b83c5e07ddc4c3344e" data-stat-pid="4_221_34">米家聲波電動牙刷 T500</a>
+                              </h3>
+                              <p class="price">NT$ 995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3201200026" target="_blank" data-ot-info="{&quot;d&quot;:&quot;36&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3201200026&quot;,&quot;elementTitle&quot;:&quot;米家電動刮鬍刀 S500&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right36_click', 'https://buy.mi.com/tw/item/3201200026'])" data-stat-aid="HWAAc92f207b059e8f485e32150362ad8f0b" data-stat-pid="4_221_35"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1584678166.38932100.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;36&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3201200026&quot;,&quot;elementTitle&quot;:&quot;米家電動刮鬍刀 S500&quot;}" href="https://buy.mi.com/tw/item/3201200026" target="_blank" data-stat-aid="HWAAc92f207b059e8f485e32150362ad8f0b" data-stat-pid="4_221_35">米家電動刮鬍刀 S500</a>
+                              </h3>
+                              <p class="price">NT$ 995</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3203900020" target="_blank" data-ot-info="{&quot;d&quot;:&quot;37&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3203900020&quot;,&quot;elementTitle&quot;:&quot;小米行車記錄器 2&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right37_click', 'https://buy.mi.com/tw/item/3203900020'])" data-stat-aid="HWAAe3f769c4b12d29d58abdc9ffa317fc79" data-stat-pid="4_221_36"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1601031300.9566893.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;37&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3203900020&quot;,&quot;elementTitle&quot;:&quot;小米行車記錄器 2&quot;}" href="https://buy.mi.com/tw/item/3203900020" target="_blank" data-stat-aid="HWAAe3f769c4b12d29d58abdc9ffa317fc79" data-stat-pid="4_221_36">小米行車記錄器 2</a>
+                              </h3>
+                              <p class="price">NT$ 1795</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3193900025" target="_blank" data-ot-info="{&quot;d&quot;:&quot;38&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3193900025&quot;,&quot;elementTitle&quot;:&quot;小米無線車充&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right38_click', 'https://buy.mi.com/tw/item/3193900025'])" data-stat-aid="HWAAedf8166290ff8fa0a8862785d470d650" data-stat-pid="4_221_37"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1573135477.55717128.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;38&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3193900025&quot;,&quot;elementTitle&quot;:&quot;小米無線車充&quot;}" href="https://buy.mi.com/tw/item/3193900025" target="_blank" data-stat-aid="HWAAedf8166290ff8fa0a8862785d470d650" data-stat-pid="4_221_37">小米無線車充</a>
+                              </h3>
+                              <p class="price">NT$ 945</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3222100018" target="_blank" data-ot-info="{&quot;d&quot;:&quot;39&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222100018&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧門鈴 3&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right39_click', 'https://buy.mi.com/tw/item/3222100018'])" data-stat-aid="HWAAb6f6f53083bfe2be9db4dcee499cc6e4" data-stat-pid="4_221_38"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1653632375.35849769.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;39&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222100018&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧門鈴 3&quot;}" href="https://buy.mi.com/tw/item/3222100018" target="_blank" data-stat-aid="HWAAb6f6f53083bfe2be9db4dcee499cc6e4" data-stat-pid="4_221_38">Xiaomi 智慧門鈴 3</a>
+                              </h3>
+                              <p class="price">NT$ 1895</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3202200060" target="_blank" data-ot-info="{&quot;d&quot;:&quot;40&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3202200060&quot;,&quot;elementTitle&quot;:&quot;小米液晶手寫板&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right40_click', 'https://buy.mi.com/tw/item/3202200060'])" data-stat-aid="HWAA2c194c4f8c2f716dda8cf2064597dc08" data-stat-pid="4_221_39"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1625537103.92621257.jpg?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;40&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3202200060&quot;,&quot;elementTitle&quot;:&quot;小米液晶手寫板&quot;}" href="https://buy.mi.com/tw/item/3202200060" target="_blank" data-stat-aid="HWAA2c194c4f8c2f716dda8cf2064597dc08" data-stat-pid="4_221_39">小米液晶手寫板</a>
+                              </h3>
+                              <p class="price">NT$ 495</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3222500047" target="_blank" data-ot-info="{&quot;d&quot;:&quot;41&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222500047&quot;,&quot;elementTitle&quot;:&quot;小米戶外藍牙喇叭 (16W)&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right41_click', 'https://buy.mi.com/tw/item/3222500047'])" data-stat-aid="HWAA1a094a7ed5115dbbc9cf0b18ef8cd632" data-stat-pid="4_221_40"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656064170.12135221.jpg?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;41&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222500047&quot;,&quot;elementTitle&quot;:&quot;小米戶外藍牙喇叭 (16W)&quot;}" href="https://buy.mi.com/tw/item/3222500047" target="_blank" data-stat-aid="HWAA1a094a7ed5115dbbc9cf0b18ef8cd632" data-stat-pid="4_221_40">小米戶外藍牙喇叭 (16W)</a>
+                              </h3>
+                              <p class="price">NT$ 1195</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3214100038" target="_blank" data-ot-info="{&quot;d&quot;:&quot;42&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3214100038&quot;,&quot;elementTitle&quot;:&quot;小米 WiFi 訊號延伸器 AC1200&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right42_click', 'https://buy.mi.com/tw/item/3214100038'])" data-stat-aid="HWAA612e1b10a0a02d62ec6352d23e0f1070" data-stat-pid="4_221_41"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1634114650.21895767.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;42&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3214100038&quot;,&quot;elementTitle&quot;:&quot;小米 WiFi 訊號延伸器 AC1200&quot;}" href="https://buy.mi.com/tw/item/3214100038" target="_blank" data-stat-aid="HWAA612e1b10a0a02d62ec6352d23e0f1070" data-stat-pid="4_221_41">小米 WiFi 訊號延伸器 AC1200</a>
+                              </h3>
+                              <p class="price">NT$ 695</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3220100013" target="_blank" data-ot-info="{&quot;d&quot;:&quot;43&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220100013&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 路由器 AC1200&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right43_click', 'https://buy.mi.com/tw/item/3220100013'])" data-stat-aid="HWAA66227c33e0b7ee5a72b58806d04cafe0" data-stat-pid="4_221_42"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1644547196.42651278.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;43&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3220100013&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 路由器 AC1200&quot;}" href="https://buy.mi.com/tw/item/3220100013" target="_blank" data-stat-aid="HWAA66227c33e0b7ee5a72b58806d04cafe0" data-stat-pid="4_221_42">Xiaomi 路由器 AC1200</a>
+                              </h3>
+                              <p class="price">NT$ 795</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3223300018" target="_blank" data-ot-info="{&quot;d&quot;:&quot;44&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223300018&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧彩光燈帶&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right44_click', 'https://buy.mi.com/tw/item/3223300018'])" data-stat-aid="HWAAde88023ddd4d8c58ce60f593673127b0" data-stat-pid="4_221_43"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1662533245.15999130.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;44&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223300018&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧彩光燈帶&quot;}" href="https://buy.mi.com/tw/item/3223300018" target="_blank" data-stat-aid="HWAAde88023ddd4d8c58ce60f593673127b0" data-stat-pid="4_221_43">Xiaomi 智慧彩光燈帶</a>
+                              </h3>
+                              <p class="price">NT$ 1495</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3193500035" target="_blank" data-ot-info="{&quot;d&quot;:&quot;45&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3193500035&quot;,&quot;elementTitle&quot;:&quot;小衛質品泡沫洗手液（6瓶裝）&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right45_click', 'https://buy.mi.com/tw/item/3193500035'])" data-stat-aid="HWAA52b1cc900ff53b91a3c4666b6bc8604a" data-stat-pid="4_221_44"><img src="https://i01.appmifile.com/webfile/globalweb/picture/20220812-165923.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;45&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3193500035&quot;,&quot;elementTitle&quot;:&quot;小衛質品泡沫洗手液（6瓶裝）&quot;}" href="https://buy.mi.com/tw/item/3193500035" target="_blank" data-stat-aid="HWAA52b1cc900ff53b91a3c4666b6bc8604a" data-stat-pid="4_221_44">小衛質品泡沫洗手液（6瓶裝）</a>
+                              </h3>
+                              <p class="price">NT$ 430</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3203600057" target="_blank" data-ot-info="{&quot;d&quot;:&quot;46&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3203600057&quot;,&quot;elementTitle&quot;:&quot;米家自動感應洗手機 單機版&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right46_click', 'https://buy.mi.com/tw/item/3203600057'])" data-stat-aid="HWAAbe1f02b7ac357fc5dc8e261eb16a22d8" data-stat-pid="4_221_45"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1599703207.66844188.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;46&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3203600057&quot;,&quot;elementTitle&quot;:&quot;米家自動感應洗手機 單機版&quot;}" href="https://buy.mi.com/tw/item/3203600057" target="_blank" data-stat-aid="HWAAbe1f02b7ac357fc5dc8e261eb16a22d8" data-stat-pid="4_221_45">米家自動感應洗手機 單機版</a>
+                              </h3>
+                              <p class="price">NT$ 295</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3192100001" target="_blank" data-ot-info="{&quot;d&quot;:&quot;47&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3192100001&quot;,&quot;elementTitle&quot;:&quot;小米體重計 2&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right47_click', 'https://buy.mi.com/tw/item/3192100001'])" data-stat-aid="HWAA0b7e7a7f0b75bd9986fb13a9ed7881dc" data-stat-pid="4_221_46"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1558492333.69238139.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;47&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3192100001&quot;,&quot;elementTitle&quot;:&quot;小米體重計 2&quot;}" href="https://buy.mi.com/tw/item/3192100001" target="_blank" data-stat-aid="HWAA0b7e7a7f0b75bd9986fb13a9ed7881dc" data-stat-pid="4_221_46">小米體重計 2</a>
+                              </h3>
+                              <p class="price">NT$ 395</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3200200016" target="_blank" data-ot-info="{&quot;d&quot;:&quot;48&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3200200016&quot;,&quot;elementTitle&quot;:&quot;米家電動起子機&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right48_click', 'https://buy.mi.com/tw/item/3200200016'])" data-stat-aid="HWAA02ffde1f40cc459d7fab31ef8fdd81ad" data-stat-pid="4_221_47"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1581320980.97265101.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;48&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3200200016&quot;,&quot;elementTitle&quot;:&quot;米家電動起子機&quot;}" href="https://buy.mi.com/tw/item/3200200016" target="_blank" data-stat-aid="HWAA02ffde1f40cc459d7fab31ef8fdd81ad" data-stat-pid="4_221_47">米家電動起子機</a>
+                              </h3>
+                              <p class="price">NT$ 895</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3221100072" target="_blank" data-ot-info="{&quot;d&quot;:&quot;49&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3221100072&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧延長線 20W 快充版&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right49_click', 'https://buy.mi.com/tw/item/3221100072'])" data-stat-aid="HWAAb08e10ab963e52d055a35312b35f517e" data-stat-pid="4_221_48"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1649831706.06868839.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;49&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3221100072&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧延長線 20W 快充版&quot;}" href="https://buy.mi.com/tw/item/3221100072" target="_blank" data-stat-aid="HWAAb08e10ab963e52d055a35312b35f517e" data-stat-pid="4_221_48">Xiaomi 智慧延長線 20W 快充版</a>
+                              </h3>
+                              <p class="price">NT$ 695</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3212000033" target="_blank" data-ot-info="{&quot;d&quot;:&quot;50&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3212000033&quot;,&quot;elementTitle&quot;:&quot;小米 33W 快速充電器 1A1C版&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right50_click', 'https://buy.mi.com/tw/item/3212000033'])" data-stat-aid="HWAA8ccde093081dd1fcff9d1d02f1c2f00a" data-stat-pid="4_221_49"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1624522653.84174289.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;50&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3212000033&quot;,&quot;elementTitle&quot;:&quot;小米 33W 快速充電器 1A1C版&quot;}" href="https://buy.mi.com/tw/item/3212000033" target="_blank" data-stat-aid="HWAA8ccde093081dd1fcff9d1d02f1c2f00a" data-stat-pid="4_221_49">小米 33W 快速充電器 1A1C版</a>
+                              </h3>
+                              <p class="price">NT$ 325</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3215200044" target="_blank" data-ot-info="{&quot;d&quot;:&quot;51&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3215200044&quot;,&quot;elementTitle&quot;:&quot;Xiaomi GaN充電器 65W 1A1C 版&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right51_click', 'https://buy.mi.com/tw/item/3215200044'])" data-stat-aid="HWAA731043d6654aacf08c7a1db5cbc0ca13" data-stat-pid="4_221_50"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1640775810.16755993.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;51&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3215200044&quot;,&quot;elementTitle&quot;:&quot;Xiaomi GaN充電器 65W 1A1C 版&quot;}" href="https://buy.mi.com/tw/item/3215200044" target="_blank" data-stat-aid="HWAA731043d6654aacf08c7a1db5cbc0ca13" data-stat-pid="4_221_50">Xiaomi GaN充電器 65W 1A1C 版</a>
+                              </h3>
+                              <p class="price">NT$ 765</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3222600034" target="_blank" data-ot-info="{&quot;d&quot;:&quot;52&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222600034&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 33W 充電器套裝&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right52_click', 'https://buy.mi.com/tw/item/3222600034'])" data-stat-aid="HWAA8851d56c4c7ecf4ebe3395fed1ea9321" data-stat-pid="4_221_51"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656667002.79797284.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;52&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222600034&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 33W 充電器套裝&quot;}" href="https://buy.mi.com/tw/item/3222600034" target="_blank" data-stat-aid="HWAA8851d56c4c7ecf4ebe3395fed1ea9321" data-stat-pid="4_221_51">Xiaomi 33W 充電器套裝</a>
+                              </h3>
+                              <p class="price">NT$ 345</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3214400030" target="_blank" data-ot-info="{&quot;d&quot;:&quot;53&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3214400030&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 行動電源 20000 50W&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right53_click', 'https://buy.mi.com/tw/item/3214400030'])" data-stat-aid="HWAA29edd118cf517fd8156175637f55bbe1" data-stat-pid="4_221_52"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1635923706.23036208.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;53&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3214400030&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 行動電源 20000 50W&quot;}" href="https://buy.mi.com/tw/item/3214400030" target="_blank" data-stat-aid="HWAA29edd118cf517fd8156175637f55bbe1" data-stat-pid="4_221_52">Xiaomi 行動電源 20000 50W</a>
+                              </h3>
+                              <p class="price">NT$ 1095</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3222800008" target="_blank" data-ot-info="{&quot;d&quot;:&quot;54&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222800008&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 直立風冷無線充電座 50W&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right54_click', 'https://buy.mi.com/tw/item/3222800008'])" data-stat-aid="HWAAcd65ac580f6375d49e939757d157a553" data-stat-pid="4_221_53"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1657522001.80076862.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;54&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222800008&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 直立風冷無線充電座 50W&quot;}" href="https://buy.mi.com/tw/item/3222800008" target="_blank" data-stat-aid="HWAAcd65ac580f6375d49e939757d157a553" data-stat-pid="4_221_53">Xiaomi 直立風冷無線充電座 50W</a>
+                              </h3>
+                              <p class="price">NT$ 1395</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3200700037" target="_blank" data-ot-info="{&quot;d&quot;:&quot;55&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3200700037&quot;,&quot;elementTitle&quot;:&quot;20000 小米行動電源 3 快充版&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right55_click', 'https://buy.mi.com/tw/item/3200700037'])" data-stat-aid="HWAA6a28acdb393cc589f49a884e1d316663" data-stat-pid="4_221_54"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1581391576.5046929.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;55&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3200700037&quot;,&quot;elementTitle&quot;:&quot;20000 小米行動電源 3 快充版&quot;}" href="https://buy.mi.com/tw/item/3200700037" target="_blank" data-stat-aid="HWAA6a28acdb393cc589f49a884e1d316663" data-stat-pid="4_221_54">20000 小米行動電源 3 快充版</a>
+                              </h3>
+                              <p class="price">NT$ 665</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3223700082" target="_blank" data-ot-info="{&quot;d&quot;:&quot;56&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223700082&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 無線行動電源 10000&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right56_click', 'https://buy.mi.com/tw/item/3223700082'])" data-stat-aid="HWAA562018b7400597b206b3f6600801cb02" data-stat-pid="4_221_55"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1666602541.09888225.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;56&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3223700082&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 無線行動電源 10000&quot;}" href="https://buy.mi.com/tw/item/3223700082" target="_blank" data-stat-aid="HWAA562018b7400597b206b3f6600801cb02" data-stat-pid="4_221_55">Xiaomi 無線行動電源 10000</a>
+                              </h3>
+                              <p class="price">NT$ 695</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3221600003" target="_blank" data-ot-info="{&quot;d&quot;:&quot;57&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3221600003&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 電子溫濕度計 Pro&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right57_click', 'https://buy.mi.com/tw/item/3221600003'])" data-stat-aid="HWAA4ce350140351388ce60e7d8f843a1a88" data-stat-pid="4_221_56"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1650272609.92517629.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;57&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3221600003&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 電子溫濕度計 Pro&quot;}" href="https://buy.mi.com/tw/item/3221600003" target="_blank" data-stat-aid="HWAA4ce350140351388ce60e7d8f843a1a88" data-stat-pid="4_221_56">Xiaomi 電子溫濕度計 Pro</a>
+                              </h3>
+                              <p class="price">NT$ 495</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3222500042" target="_blank" data-ot-info="{&quot;d&quot;:&quot;58&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222500042&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧寵物餵食器&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right58_click', 'https://buy.mi.com/tw/item/3222500042'])" data-stat-aid="HWAA27c14619cfa6840fe07436906a9d1836" data-stat-pid="4_221_57"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1656061856.49693908.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;58&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3222500042&quot;,&quot;elementTitle&quot;:&quot;Xiaomi 智慧寵物餵食器&quot;}" href="https://buy.mi.com/tw/item/3222500042" target="_blank" data-stat-aid="HWAA27c14619cfa6840fe07436906a9d1836" data-stat-pid="4_221_57">Xiaomi 智慧寵物餵食器</a>
+                              </h3>
+                              <p class="price">NT$ 2695</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3202100014" target="_blank" data-ot-info="{&quot;d&quot;:&quot;59&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3202100014&quot;,&quot;elementTitle&quot;:&quot;米家藍牙溫濕度計 2&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right59_click', 'https://buy.mi.com/tw/item/3202100014'])" data-stat-aid="HWAA538b2b9f12be4c9a6efbc2a627490b46" data-stat-pid="4_221_58"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1592464563.31172925.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;59&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3202100014&quot;,&quot;elementTitle&quot;:&quot;米家藍牙溫濕度計 2&quot;}" href="https://buy.mi.com/tw/item/3202100014" target="_blank" data-stat-aid="HWAA538b2b9f12be4c9a6efbc2a627490b46" data-stat-pid="4_221_58">米家藍牙溫濕度計 2</a>
+                              </h3>
+                              <p class="price">NT$ 135</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                   
+                      <li class="brick-item brick-item-m">
+                              <div class="figure figure-img">
+                                <a href="https://buy.mi.com/tw/item/3200800016" target="_blank" data-ot-info="{&quot;d&quot;:&quot;60&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3200800016&quot;,&quot;elementTitle&quot;:&quot;小米無線雙模滑鼠 靜音版&quot;}" onclick="_msq.push(['trackEvent', 'event', 'index', '-other_product-otherproduct_right60_click', 'https://buy.mi.com/tw/item/3200800016'])" data-stat-aid="HWAAf51fb40ce0954f95f9565dd9931fec91" data-stat-pid="4_221_59"><img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1582015124.78257204.png?width=150&amp;height=150" alt=""></a>
+                              </div>
+                              <h3 class="title">
+                                <a data-ot-info="{&quot;d&quot;:&quot;60&quot;,&quot;linkUrl&quot;:&quot;https://buy.mi.com/tw/item/3200800016&quot;,&quot;elementTitle&quot;:&quot;小米無線雙模滑鼠 靜音版&quot;}" href="https://buy.mi.com/tw/item/3200800016" target="_blank" data-stat-aid="HWAAf51fb40ce0954f95f9565dd9931fec91" data-stat-pid="4_221_59">小米無線雙模滑鼠 靜音版</a>
+                              </h3>
+                              <p class="price">NT$ 365</p>
+              
+                              <div class="flags">
+                                  <div class="flags-list">
+              
+                                   
+              
+                                                                              </div>
+                                </div> 
+              
+                            </li>
+                   
+                          </ul>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="home-videos">
+            <div class="home-hero-sub home-hero-sub2">
+              <ul class="home-promo-list"></ul>
+            </div>
+        </div>
+        <div class="site-footer">
+
+            <div class="footer-service">
+              <div class="container">
+                <ul class="list-service clearfix">
+                  <li><a rel="nofollow" href="#">
+                    <i class="icon-footer icon-footer-gift"></i><div class="info-desc"><strong>免運費</strong><span>全場滿 NT$800</span></div></a></li>
+                    <li><a rel="nofollow" href="#">
+                        <i class="icon-footer icon-footer-express"></i>
+                        <div class="info-desc"><strong>黑貓宅急便 x GOGOX</strong><span>服務升級，限時送達</span></div></a></li>
+                        <li><a rel="nofollow" href="#">
+                    <i class="icon-footer icon-footer-qiye"></i>
+                    <div class="info-desc"><strong>團購採購通道</strong><span>採購小米好禮專屬通道</span></div></a></li>        
+                    <li class="social-media" data-ot-module="4|2">
+                    <span>關注我們</span>
+                    <a href="#" title="Facebook"class="facebook-follow"><i class="iconfont-facebook-18"></i></a>
+                    <a href="#" title="Instagram" class="instagram-follow"><i class="iconfont-ins-18"></i></a>
+                    <a href="#" title="Youtube" class="youtube-follow"><i class="iconfont-youtube"></i></a>
+                    <a href="#" title="Line" class="line-follow"><i class="footericon-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          
+            <div class="footer-content">
+              <div class="container">
+                <div class="footer-links clearfix">
+                  <dl class="col-links col-links-first" data-ot-module="4|4">
+                    <dt>產品與配件</dt>
+                    <dd>
+                      <ul class="clearfix">
+                        <li>
+                      <a href="#" >熱門商品分類</a>
+                    </li>
+                    <li>
+                      <a href="#">全部商品分類</a>
+                    </li>
+                  </ul>
+                </dd>
+                <dd>
+                  <ul class="clearfix">
+                    <li>
+                      <a href="#">官方翻新機</a>
+                    </li>
+                    <li>
+                      <a href="#" >F 碼通道</a>
+                    </li>
+                  </ul>
+                </dd>        </dl>
+                  <dl class="col-links col-links-second" data-ot-module="4|3">
+                    <dt>幫助中心</dt>
+                    <dd><a href="#" >購物指南</a>
+                    </dd>
+                    <dd>
+                      <a href="#" >付款幫助</a>
+                    </dd>
+                    <dd>
+                      <a href="#" >PayPal 使用幫助</a>
+                    </dd>
+                    <dd>
+                      <a href="#" >分期付款</a>
+                    </dd>
+                    <dd>
+                      <a href="#">常見 Q&A</a>
+                    </dd>
+                    <dd>
+                      <a href="#" >線上填寫折讓單入口</a>
+                    </dd>
+                    <dd>
+                      <a href="#">退款資料補充</a>
+                    </dd>        
+                  </dl>
+                  <dl class="col-links col-links-third">
+                    <dt>客戶支援</dt>
+                    <dd>
+                      <a href="#" target="_self">服務條款及細則</a>
+                    </dd>
+                    <dd>
+                      <a href="#" >維修站地點</a>
+                    </dd>
+                    <dd>
+                      <a href="#" >售後服務政策</a>
+                    </dd>
+                    <dd>
+                      <a href="#">退貨須知</a>
+                    </dd>
+                    <dd><a href="#">配送規範</a>
+                    </dd>
+                    <dd>
+                      <a href="#" target="_self">使用者指南</a>
+                    </dd>   
+                    <dd>
+                      <a href="#" target="_self">尊享服務</a>
+                    </dd>        
+                  </dl>
+                  <dl class="col-links col-links-fourth">
+                    <dt>關於小米</dt>
+                    <dd>
+                      <a  href="#" >瞭解小米</a>
+                    </dd>
+                    <dd>
+                      <a href="#">管理團隊</a>
+                    </dd>
+                    <dd>
+                      <a rel="nofollow" href="#">隱私條款</a>
+                    </dd>
+                    <dd>
+                      <a rel="nofollow" href="#">誠信規範​</a>
+                    </dd>
+                    <dd>
+                      <a href="#">投資者關係</a>
+                    </dd>
+                    <dd>
+                      <a href="#">信任中心</a>
+                    </dd>
+                  </dl>
+                  <dl class="col-links col-links-fourth">
+                    <dt>小米哪裡買</dt>
+                    <dd>
+                      <a href="#">小米之家/小米專賣店</a>
+                    </dd> 
+                    <dd>
+                      <a href="#">官方授權通路</a>
+                    </dd> 
+                    <dd>
+                      <a href="#">聯絡我們</a>
+                    </dd>        
+                  </dl>
+                  <div class="col-contact">
+                    <p class="phone">02-77255376</p>
+                    <p class="serv-time">服務時間 09:00-18:00 含節假日<br></p>
+          
+                            </div>
+                </div>
+                <div class="footer-info clearfix">
+                  <div class="info-text">
+                    <p>© 2010 - 2022 Xiaomi 版權所有            <a href=""></a> 旗下網站：
+                      <a href="#">小米商城</a>
+          <a href="#">MIUI</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+    </body>
+</html>
