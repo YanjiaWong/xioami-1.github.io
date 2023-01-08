@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>Google</title>
+<meta charset="utf-8">
+<style>
+    div.font1{
+        height: 18px;
+        width:90px;
+        padding: 15px 15px;
+        font-size: 14px;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:left;
+        cursor:pointer;
+        color:#202124;
+       
+    }
+        
+    div.font2{
+        height: 18px;
+        width:90px;
+        padding: 15px 0px;
+        font-size: 14px;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:left;
+        cursor:pointer;
+        color:#202124;
+       
+    }
+        
+    div.font3{
+        height: 20px;
+        width:30px;
+        padding: 15px 30px;
+        font-size: 14px;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:right;
+        cursor:pointer;
+        color:#202124;
+        
+    }
+
+    div.font4{
+        height: 17px;
+        width:30px;
+        padding: 15px 0px;
+        font-size: 14px;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:right;
+        cursor:pointer;
+        color:#202124;
+        
+    }
+
+    div.font1:hover,div.font2:hover,div.font3:hover,div.font4:hover{
+        text-decoration:underline;
+    }
+
+    div.app{
+        height: 18px;
+        width:50px;
+        padding: 15px 5px;
+        font-size: 14px;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:right;
+        cursor:pointer;
+        color:#202124;
+       
+    }
+
+    div.login{
+        height: 18px;
+        width:120px;
+        padding: 15px 30px;
+        font-size: 14px;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:right;
+        cursor:pointer;
+        color:#202124;
+        
+    }
+        
+        
+    .img2{
+        max-height: 100%;
+        max-width: 100%;
+        position:relative;
+        left:50px;
+        top:1px;
+        cursor:pointer;
+    }
+    
+
+
+    #side{
+        
+        height: 230px;
+    }
+    #main{
+        
+        height: 160px;
+    }
+    #footer{
+        
+        height: 300px;
+    }
+    #kind{
+        background-color:#f2f2f2;
+        height: 20px;
+        padding: 15px 30px;
+        border-bottom: 1px solid #dadce0;
+        display: block;
+        font-size: 15px;
+        color: #70757a;
+        font-family: arial,sans-serif;
+    }
+    
+    #a{
+        background-color:#f2f2f2;
+        height: 18px;
+        width:30px;
+        padding: 15px 30px;
+        font-size: 14px;
+        color: #70757a;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:left;
+        cursor:pointer;
+        
+
+    }
+    #b{
+        background-color:#f2f2f2;
+        height: 18px;
+        width:30px;
+        padding: 15px 0px;
+        font-size: 14px;
+        color: #70757a;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:left;
+        cursor:pointer;
+       
+
+    }
+    #c{
+        background-color:#f2f2f2;
+        height: 18px;
+        width:1480px;
+        padding: 15px 30px;
+        font-size: 14px;
+        color: #70757a;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:left;
+        cursor:pointer;
+        
+
+    }
+    #d{
+        background-color:#f2f2f2;
+        height: 18px;
+        width:30px;
+        padding: 15px 30px;
+        font-size: 14px;
+        color: #70757a;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:right;
+        cursor:pointer;
+        
+
+    }
+    #e{
+        background-color:#f2f2f2;
+        height: 18px;
+        width:60px;
+        padding: 15px 0px;
+        font-size: 14px;
+        color: #70757a;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:right;
+        cursor:pointer;
+
+    }
+    #f{
+        background-color:#f2f2f2;
+        height: 18px;
+        width:60px;
+        padding: 15px 15px;
+        font-size: 14px;
+        color: #70757a;
+        font-family: arial,sans-serif;
+        text-decoration:none;
+        float:right;
+        cursor:pointer;
+        
+
+    }
+    #a:hover,#b:hover,#c:hover,#d:hover,#e:hover,#f:hover {
+        text-decoration:underline;
+    }
+
+    input{
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 10px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        align-items: center;        
+        user-select: none;
+        outline-style: none;
+        
+        
+    }
+    input:hover{
+        border: 1.5px solid #E0E0E0;
+        box-shadow: 0px -1px 3px  #E0E0E0,
+                    -1px 0px 3px  #E0E0E0,
+                    1px 0px 3px   #E0E0E0,
+                    0px 2px 3px   #E0E0E0;
+        
+
+    }
+    .img1{
+        max-height: 100%;
+        max-width: 100%;
+        position:relative;
+        left:600px;
+        top:211px;
+    }
+    .img2{
+        max-height: 100%;
+        max-width: 100%;
+        position:relative;
+        left:40px;
+        top:0px;
+    }
+    .img3{
+        height: 14px;
+        width:18px;
+        position:relative;
+        left:690px;
+        top:-41px;
+    }
+    .img4{
+        height: 25px;
+        width:30px;
+        position:relative;
+        left:1125px;
+        top:-35px;
+    }
+    .img5{
+        height: 20px;
+        width:25px;
+        position:relative;
+        left:1140px;
+        top:-38px;
+    }
+   
+   
+</style>
+</head>
+<body>
+    
+    <div class="font1">關於 Google</div>
+    <div class="font2">Google 商店</div>
+    <div class="login">
+        <input type="submit" value="登入" style="position:relative;top:-20px;font-size:15px;cursor: pointer; background: #1a73e8; height: 45px; width:125px;color:#FFF;
+        border-width: 10px solid transparent; box-shadow: none; ">
+    </div>
+    <div class="app">
+        <img class='img2' src="grid.png" >
+    </div>
+    <div class="font4">圖片</div>
+    <div class="font3">Gmail</div>
+
+
+
+    
+    <img class='img1' src="google.png">
+
+    <div id="side"></div>
+    <input type="text" placeholder=""
+    style="
+    display: flex;
+    
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 550px;
+    ">
+
+    <img class='img3' src="searching.png" >
+    <img class='img4' src="google-voice.png" >
+    <img class='img5' src="photo.png" >
+
+
+
+
+
+
+    
+    <div id="main" style="text-align: center;">
+        <input type="submit" value="Google 搜尋" style="cursor: pointer;position:relative;top:-10px; box-shadow: none;  " >
+        <input type="submit" value="好手氣" style="cursor: pointer;position:relative;top:-10px; box-shadow: none;">
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+
+
+    <div id="kind">台灣</div>
+    <div id="a">廣告</div>
+    <div id="b">商業</div>
+    <div id="c">搜尋服務的運作方式</div>
+    <div id="d">設定</div>
+    <div id="e">服務條款</div>
+    <div id="f">隱私權</div>
+    
+</body>
+</html>
